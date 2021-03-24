@@ -1,32 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <v-btn href="/" target="_blank" text>
+        <span class="mr-2">Diamonds Prices Predict</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+      <v-spacer />
+      <v-btn href="/" target="_blank" text>
+        <span class="mr-2">About Us</span>
+        <v-icon>mdi-edit</v-icon>
+      </v-btn>
+      <v-btn href="/" target="_blank" text>
+        <span class="mr-2">Contact</span>
+        <v-icon>mdi-phone</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <v-main class="mt-7">
+      <v-container>
+        <form-component />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import FormComponent from "./components/FormComponent.vue";
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: "App",
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+    FormComponent
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    //
+  })
+};
+</script>
