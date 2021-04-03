@@ -53,7 +53,7 @@ export default {
         tel: 656176394,
         email: "pinsdev24@gmail.com",
         github: "https://github.com/pinsdev24",
-        skills: ["Data Scientist", "Web Developer", "NLP Engeneer"],
+        skills: ["Data Scientist", "Web Developer", "ML Engeneer"],
         avatar: "/avatars/img.jpg"
       },
       {

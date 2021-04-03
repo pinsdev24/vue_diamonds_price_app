@@ -145,7 +145,7 @@
               :disabled="!valid"
               block
               large
-              color="primary"
+              color="secondary"
               class="mr-4"
               @click="estimate"
               :loading="loader"
